@@ -1,0 +1,29 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment variables & API keys
+.env
+.env.*
+
+# Python cache & Jupyter checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Local Vector Stores & Databases (from RAG / Vector_Store modules)
+chroma_db/
+faiss_index/
+*.sqlite3
+*.db
+
+# IDE & OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Uncomment the line below if you do not want to upload Notes.pdf (12.6 MB)
+# Notes.pdf

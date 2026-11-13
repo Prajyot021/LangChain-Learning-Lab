@@ -1,0 +1,64 @@
+// {
+//   "title": "student",
+//   "description": "Schema about students",
+//   "type": "object",
+
+//   "properties": {
+//     "name": {
+//       "type": "string",
+//       "description": "Student's full name",
+//       "default": "Unknown",
+//       "examples": ["Prajyot"],
+//       "minLength": 2,
+//       "maxLength": 50,
+//       "pattern": "^[A-Za-z ]+$"
+//     },
+
+//     "age": {
+//       "type": "integer",
+//       "description": "Student's age",
+//       "minimum": 18,
+//       "maximum": 100,
+//       "default": 18,
+//       "examples": [22]
+//     },
+
+//     "gender": {
+//       "type": "string",
+//       "description": "Student's gender",
+//       "enum": ["male", "female", "other"]
+//     },
+
+//     "is_student": {
+//       "type": "boolean",
+//       "description": "Whether the person is a student",
+//       "default": true
+//     },
+
+//     "subjects": {
+//       "type": "array",
+//       "description": "Subjects taken by the student",
+//       "items": {
+//         "type": "string"
+//       },
+//       "minItems": 1,
+//       "maxItems": 10
+//     },
+
+//     "address": {
+//       "type": "object",
+//       "description": "Student's address",
+//       "properties": {
+//         "city": {
+//           "type": "string"
+//         },
+//         "pincode": {
+//           "type": "integer"
+//         }
+//       },
+//       "required": ["city"]
+//     }
+//   },
+
+//   "required": ["name", "age"]
+// }
